@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import Button from '../Button/Button';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -25,9 +25,7 @@ const Hero = () => {
         <h1>¿Estás en Lima?</h1>
         <h2>¡Gana Más de 1300 Soles Fácilmente!</h2>
         <p>Únete a la Revolución Digital con Worldcoin y Gana Más de 1100 Soles:</p>
-        <button className={styles.cta}>
-          <FaWhatsapp className={styles.icon} /> WhatsApp
-        </button>
+        <Button text="WhatsApp" icon />
       </div>
     </div>
   );
