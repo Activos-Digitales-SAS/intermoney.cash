@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../Button/Button';
 import styles from './HowItWorks.module.css';
 
@@ -22,7 +23,7 @@ const HowItWorks = () => {
           En el siguiente video, te explicaré paso a paso cómo puedes participar y reclamar tu recompensa.
           Es muy fácil y rápido:
         </p>
-        <Button text="CTA" />
+        <Button text="WhatsApp" icon={FaWhatsapp} />
       </div>
     </div>
   );

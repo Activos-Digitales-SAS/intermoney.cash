@@ -5,9 +5,30 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 80px; /* Increased padding for a more spacious look */
   font-family: 'Poppins', sans-serif;
   width: 100%;
+  background: url('/path/to/background-image.jpg') no-repeat center center; /* Add your background image */
+  background-size: cover;
+  color: rgb(0, 0, 0); /* Change text color to white */
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  z-index: 0;
+}
+
+.video, .content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
 }
 
 .video {
@@ -19,18 +40,22 @@
 .video iframe {
   width: 100%;
   height: 315px;
+  border-radius: 10px; /* Add border radius to the video */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow to the video */
 }
 
 .content {
   flex: 1;
   max-width: 50%;
   padding-left: 20px;
-  color: #000;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -39,33 +64,18 @@ p {
   margin-bottom: 20px;
 }
 
-.cta {
-  font-size: 1rem;
-  font-weight: 700; /* Make the text bolder */
-  color: #fff;
-  background-color: #00ff00;
-  padding: 15px 30px;
-  border: 3px solid #00ff00;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
+.whatsappButtonContainer {
+  display: flex;
   justify-content: center;
-}
-
-.cta:hover {
-  background-color: #00cc00;
-  border-color: #00cc00;
-  box-shadow: 0 4px 20px rgba(0, 204, 0, 0.7);
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+    align-items: center; /* Center align items for smaller screens */
   }
 
   .video, .content {
@@ -73,26 +83,39 @@ p {
     padding: 0;
   }
 
+  .content {
+    text-align: center; /* Center text for smaller screens */
+  }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
   }
 
   p {
     font-size: 1rem;
-  }
-
-  .cta {
-    font-size: 0.9rem;
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 20px 10px; /* Adjust padding for very small screens */
+    align-items: center; /* Center align items for very small screens */
+  }
+
+  .content {
+    text-align: center; /* Center text for very small screens */
+  }
+
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Adjust margin for very small screens */
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-bottom: 10px; /* Adjust margin for very small screens */
   }
 
   .cta {
