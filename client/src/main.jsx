@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 
 // Inicializar GTM
 const tagManagerScript = document.createElement('script');
@@ -16,6 +17,8 @@ document.head.appendChild(tagManagerScript);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
   </React.StrictMode>,
 );

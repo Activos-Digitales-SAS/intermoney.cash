@@ -10,7 +10,7 @@ const HowItWorks = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          src="https://www.youtube.com/embed/W9Eari14DRk"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

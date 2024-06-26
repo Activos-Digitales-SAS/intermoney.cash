@@ -9,7 +9,7 @@ const steps = [
   { number: 3, text: 'Programa una cita', icon: <FaCalendarAlt /> },
   { number: 4, text: 'Acércate al Orbe más cercano', icon: <FaMapMarkerAlt /> },
   { number: 5, text: 'Proceso de Verificación', icon: <FaCheckCircle /> },
-  { number: 6, text: 'Retira tu dinero', icon: <FaMoneyBillWave /> }
+  { number: 6, text: 'Reclama tu recompensa', icon: <FaMoneyBillWave /> }
 ];
 
 const floatAnimation = {
