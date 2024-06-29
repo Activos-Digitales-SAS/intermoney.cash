@@ -43,7 +43,7 @@ const WhyWorldcoin = () => {
           </motion.div>
         ))}
       </div>
-      <Button text="WhatsApp" icon={FaWhatsapp} />
+      <Button text="WhatsApp" icon={FaWhatsapp} url="https://wa.link/roktsr" />
     </div>
   );
 };

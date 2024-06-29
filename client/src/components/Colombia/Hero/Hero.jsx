@@ -27,7 +27,7 @@ const Hero = () => {
         <h2>¡Gana Más de 1.400.000 Pesos Fácilmente!</h2>
         <p>Únete a la Revolución Digital con Worldcoin y Gana Más de 1.400.000 Pesos:</p>
         <div className={styles.buttonContainer}>
-          <Button text="WhatsApp" icon={FaWhatsapp} url="https://chat.whatsapp.com/IB4fYJHueqV4sEWcN4AKJu" />
+          <Button text="WhatsApp" icon={FaWhatsapp} url="https://wa.link/roktsr" />
           <Button text="¡Vender!" icon={FaMoneyBillWave} url="https://activoswld.com/" />
         </div>
       </div>
