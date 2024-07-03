@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaDownload, FaUserPlus, FaCalendarAlt, FaMapMarkerAlt, FaCheckCircle, FaMoneyBillWave } from 'react-icons/fa';
+import { FaGlobe, FaFileAlt, FaQrcode, FaMobileAlt, FaExchangeAlt, FaDollarSign } from 'react-icons/fa';
 import styles from './Steps.module.css';
 
 const steps = [
-  { number: 1, text: 'Descarga la APP', icon: <FaDownload /> },
-  { number: 2, text: 'Regístrate y crea tu cuenta', icon: <FaUserPlus /> },
-  { number: 3, text: 'Programa una cita', icon: <FaCalendarAlt /> },
-  { number: 4, text: 'Acércate al Orbe más cercano', icon: <FaMapMarkerAlt /> },
-  { number: 5, text: 'Proceso de Verificación', icon: <FaCheckCircle /> },
-  { number: 6, text: 'Reclama tu Recompensa', icon: <FaMoneyBillWave /> }
+  { number: 1, text: 'Ir a activoswld.com', icon: <FaGlobe /> },
+  { number: 2, text: 'Llenar el formulario', icon: <FaFileAlt /> },
+  { number: 3, text: 'Escanea o copia la dirección', icon: <FaQrcode /> },
+  { number: 4, text: 'Abre la WorldApp', icon: <FaMobileAlt /> },
+  { number: 5, text: 'Transfiere tus WorldCoins', icon: <FaExchangeAlt /> },
+  { number: 6, text: 'Recibe tu pago en unos minutos', icon: <FaDollarSign /> }
 ];
+
+
 
 const floatAnimation = {
   animate: {
@@ -61,10 +63,18 @@ const Steps = () => {
   return (
     <div className={styles.container}>
       <div className={styles.overlay}></div>
-      <h2 className={styles.titleSteps}>¿Estás buscando una manera sencilla de ganar dinero extra?</h2>
-      <p className={styles.subtitle}>
-        ¡Tenemos la solución perfecta para ti! Worldcoin es un proyecto revolucionario que te ofrece la oportunidad de ganar 1.400.000 Pesos simplemente por registrarte y crear tu pasaporte digital universal.
-      </p>
+      <h2 className={styles.titleSteps}>Pasos para hacer tu primer cambio</h2>
+      <div className={styles.video}>
+        <iframe
+          width="100%"
+          height="100%"
+                 src="https://www.youtube.com/embed/X-URR2gls4s"
+          title="Tutorial para enviar WorldCoins"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className={styles.steps}>
         {steps.map((step, index) => (
           <motion.div

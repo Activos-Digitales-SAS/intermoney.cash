@@ -6,10 +6,11 @@ import { motion } from 'framer-motion';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const steps = [
-  "Innovación: Sé parte de un proyecto que está transformando la identidad digital a nivel global.",
-  "Recompensa Valiosa: Recibe 1.400.000 Pesos en WLD-WorldCoin, con un valor actual de 4.9 USD por moneda.",
-  "Fácil de Usar: Todo el proceso es intuitivo y puede realizarse desde tu teléfono móvil."
+  "Estamos regulados y auditados por la UIAF",
+  "Contamos con sede física en Colombia",
+  "Contamos con un equipo altamente capacitado"
 ];
+
 
 const WhyWorldcoin = () => {
   const [displayedSteps, setDisplayedSteps] = useState([]);
@@ -28,7 +29,8 @@ const WhyWorldcoin = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.titleC}>¿Por qué Worldcoin?</h2>
+  <h2 className={styles.titleC}>¿Por qué cambiar con nosotros?</h2>
+
       <div className={styles.steps}>
         {displayedSteps.map((step, index) => (
           <motion.div
@@ -43,6 +45,8 @@ const WhyWorldcoin = () => {
           </motion.div>
         ))}
       </div>
+      <p>¿Tienes alguna pregunta? ¡Escríbenos ahora mismo!</p>
+
       <Button text="WhatsApp" icon={FaWhatsapp} url="https://wa.link/roktsr" />
     </div>
   );

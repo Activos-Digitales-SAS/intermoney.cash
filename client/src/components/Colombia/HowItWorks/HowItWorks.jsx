@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp, FaMoneyBillWave } from 'react-icons/fa';
 import Button from '../Button/Button';
 import styles from './HowItWorks.module.css';
 
@@ -18,12 +18,13 @@ const HowItWorks = () => {
         ></iframe>
       </div>
       <div className={styles.content}>
-        <h2>¿Cómo Funciona?</h2>
-        <p>
-          En el siguiente video, te explicaré paso a paso cómo puedes participar y reclamar tu recompensa.
-          Es muy fácil y rápido:
-        </p>
-        <Button text="WhatsApp" icon={FaWhatsapp} url="https://wa.link/roktsr" />
+      <h2>¿Cómo funciona?</h2>
+<p>
+  En el video, te explico paso a paso cómo puedes cambiar tus WorldCoin y por qué hacerlo con nosotros es la mejor opción.
+</p>
+
+        {/*<Button text="WhatsApp" icon={FaWhatsapp} url="https://wa.link/roktsr" /> */} 
+        <Button text="¡Vender WorldCoins!" icon={FaMoneyBillWave} url="https://activoswld.com/" />
       </div>
     </div>
   );

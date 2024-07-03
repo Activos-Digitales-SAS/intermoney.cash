@@ -23,11 +23,12 @@ const Hero = () => {
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <img src="/logo.png" alt="Logo" className={styles.logo} />
-        <h1>¿Estás en Colombia?</h1>
-        <h2>¡Gana Más de 1.400.000 Pesos Fácilmente!</h2>
-        <p>Únete a la Revolución Digital con Worldcoin y Gana Más de 1.400.000 Pesos:</p>
+        <h1>Cambia tus WorldCoin</h1>
+<h2>¡De manera rápida y segura!</h2>
+<p>Más de 10 años de experiencia en el mercado y con sede física en Colombia.</p>
+
         <div className={styles.buttonContainer}>
-          <Button text="WhatsApp" icon={FaWhatsapp} url="https://wa.link/roktsr" />
+          
           <Button text="¡Vender!" icon={FaMoneyBillWave} url="https://activoswld.com/" />
         </div>
       </div>
